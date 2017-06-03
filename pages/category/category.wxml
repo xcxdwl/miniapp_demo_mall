@@ -1,0 +1,17 @@
+<view wx:if="{{items.length > 0}}">
+  <scroll-view scroll-y="true" height="100%">
+    <view class="item-container">
+      <block wx:for="{{items}}" wx:for-item="item" wx:key="id">
+        <view class="item">
+          <view class="item-block" bindtap="bindTapProduct" data-id="{{item.id}}">
+            <image class="head-img" src="{{item['image-url']}}" mode="aspectFit"></image>    
+            <view class="first-line">
+              <text class="name">{{item.name}}</text>
+            </view>
+            <text class="second-line">¥{{item['member-price']}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

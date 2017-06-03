@@ -1,0 +1,9 @@
+page {
+  background-color: white;
+  height: 100%;
+}
+
+.separate {
+  height: 18rpx;
+  background-color: #f2f2f2;
+}
